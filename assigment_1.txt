@@ -1,0 +1,104 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+*
+'hello';
+-87.8
+-
+/
++
+6
+
+ans: 
+      i] *            - expression
+     ii] 'hello'      - values
+    iii]-87.8         - values
+     iv] -            - expression
+      v] /            - expression
+     vi] +            - expression
+    vii] 6            - values
+-----------------------------------------------------
+
+2. What is the difference between string and variable?
+
+ans:
+    A string is a sequence of characters, while a variable is a container a value. 
+    A string can be assigned to a variable, and the variable can then be used to refer to the string.
+------------------------------------------------------
+
+3. Describe three different data types.
+
+ans:
+    The three main data types in Python are:
+
+    * Integer: Whole numbers, such as 1, 2, 3.
+    * Float: Numbers with decimal points, such as 1.2, 3.14.
+    * String: Sequences of characters, such as "hello world".
+    There are also other data types in Python, such as 
+    * lists: it is itereable datatype which can store multiple values, such as [1, 'banglore', 1.2]
+    * tuple: it is same list but it is immutable
+    * dictionaries: it stored data in key, value pair ex, {'city':'banglore', 'country': 'india'}
+    * sets: it can store unique values only.
+------------------------------------------------------
+
+4. What is an expression made up of? What do all expressions do?
+
+ans:
+    An expression is a combination of values, operators, and functions that evaluates to a single value. 
+    All expressions do something, such as calculate a value, perform a comparison, or control the flow of 
+    a program.
+--------------------------------------------------------
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+
+ans:
+    An expression is a combination of values, operators, and functions that evaluates to a single value. 
+    A statement is a complete instruction that tells the computer to do something. In the assignment 
+    statement spam = 10, the expression spam = 10 is evaluated and the value 10 is assigned to the 
+    variable spam.
+--------------------------------------------------------
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+
+ans:
+    bacon = 22, because after doing 'bacon + 1' it is not assigned to 'bacon' variable.
+-------------------------------------------------------
+
+7. What should the values of the following two terms be?
+'spam' + 'spamspam'
+'spam' * 3
+
+ans:
+    'spam' + 'spamspam' = 'spamspamspam'
+    'spam' * 3 = 'spamspamspam'
+------------------------------------------------------
+
+8. Why is eggs a valid variable name while 100 is invalid?
+
+ans:
+    Variable names in Python must start with a letter or underscore, and they can only contain letters, 
+    numbers, and underscores. The name eggs is valid because it starts with a letter and it only contains 
+    letters, numbers, and underscores. The name 100 is invalid because it starts with a number.
+-------------------------------------------------------
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+
+ans:
+    The three functions that can be used to get the integer, floating-point number, or string
+    version of a value are:
+
+    int(): Converts a value to an integer.
+    float(): Converts a value to a floating-point number.
+    str(): Converts a value to a string.
+------------------------------------------------------------
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten ' + 99 + 'burritos.'
+
+ans:
+    Here 'I have eaten ' and 'burritos.' both are string but 99 is number and python doesn't support 
+    concatination of string and integer. To aviod error, we can convert 99 to string format like given below
+    'I have eaten ' + str(99) + 'burritos.'
