@@ -1,0 +1,70 @@
+Q.1. Create two int type variables, apply addition, subtraction, division and multiplications
+and store the results in variables. Then print the data in the following format by calling the
+variables:
+First variable is __ & second variable is __.
+Addition: __ + __ = __
+Subtraction: __ - __ = __
+Multiplication: __ * __ = __
+Division: __ / __ = __
+Ans:
+    ```
+    first_variable = 10
+    second_variable = 20
+
+    addition = first_variable + second_variable
+    subtraction = first_variable - second_variable
+    multiplication = first_variable * second_variable
+    division = first_variable / second_variable
+
+    print('First variable is {} & second variable is {}.'.format(first_variable, second_variable))
+    print('Addition: {} + {} = {}'.format(first_variable, second_variable, addition))
+    print('Subtraction: {} - {} = {}'.format(first_variable, second_variable, subtraction))
+    print('Multiplication: {} * {} = {}'.format(first_variable, second_variable, multiplication))
+    print('Division: {} / {} = {}'.format(first_variable, second_variable, division))
+    ```
+--------------------------------------------------
+
+Q.2. What is the difference between the following operators:
+(i) ‘/’ & ‘//’
+(ii) ‘’ & ‘^’
+
+Ans: The difference between the operators / and // is that / performs normal division, while // performs floor division. This means that / will return a floating-point number, while // will return an integer.
+
+The difference between the operators ** and ^ is that ** performs exponentiation, while ^ performs bitwise exclusive or. This means that ** will raise the first operand to the power of the second operand, while ^ will return a bitwise value that is 1 if the corresponding bits of the two operands are different and 0 if they are the same.
+---------------------------------------------------
+
+Q.3. List the logical operators.
+
+Ans: The logical operators in Python are:
+
+    and: Returns True if both operands are True, False otherwise.
+    or: Returns True if either operand is True, False otherwise.
+    not: Negates the operand.
+---------------------------------------------------
+
+Q.4. Explain right shift operator and left shift operator with examples.
+
+Ans: The right shift operator (>>) and left shift operator (<<) are bitwise operators that shift the bits 
+of an integer to the right or left, respectively. 
+The number of bits to shift is specified by the second operand.
+
+For example, 
+    the expression 10 >> 2 will shift the bits of the integer 10 to the right by 2 places, 
+    resulting in the value 2. The expression 10 << 2 will shift the bits of the integer 10 to the left by 2 places, 
+    resulting in the value 40.
+------------------------------------------------------
+
+Q.5. Create a list containing int type data of length 15. Then write a code to check if 10 is
+present in the list or not.
+
+Ans: 
+    ```
+    list_of_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+    is_10_in_list = 10 in list_of_numbers
+
+    if is_10_in_list:
+        print('10 is present in the list.')
+    else:
+        print('10 is not present in the list.')
+    ```
