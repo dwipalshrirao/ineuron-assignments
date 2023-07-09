@@ -1,0 +1,95 @@
+1. What exactly is []?
+
+Ans: An empty list.
+-----------------------------------
+Let's pretend the spam includes the list ['a','b','c','d'] for the next three queries.
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+
+Ans: spam[2] = 'hello'
+-----------------------------------
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+
+Ans: 'c'
+-----------------------------------
+
+4. What is the value of spam[-1]?
+
+Ans: 10
+-----------------------------------
+
+5. What is the value of spam[:2]?
+
+Ans: [2, 4]
+-----------------------------------
+
+Let's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+
+Ans: 1
+-----------------------------------
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+
+Ans: It appends the value 99 to the end of the list.
+-----------------------------------
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+
+Ans: It removes the first occurrence of the value 'cat' from the list. 
+i.e. 'cat' at index 1 will be removed.
+-----------------------------------
+
+9. What are the list concatenation and list replication operators?
+
+Ans: The list concatenation operator is +. The list replication operator is *.
+-----------------------------------
+
+10. What is difference between the list methods append() and insert()?
+
+Ans: The append() method adds an item to the end of a list.
+ The insert() method inserts an item into a list at a specific index.
+-----------------------------------
+
+11. What are the two methods for removing items from a list?
+
+Ans: The two methods for removing items from a list are remove() and pop(). 
+The remove() method removes the first occurrence of a specified item from a list. 
+The pop() method removes the item at a specified index from a list.
+-----------------------------------
+
+12. Describe how list values and string values are identical.
+
+Ans: List values and string values are both sequences of elements. 
+They can be indexed and sliced in the same way.
+-----------------------------------
+
+13. What's the difference between tuples and lists?
+
+Ans: Tuples are immutable, while lists are mutable. This means that the elements of a tuple cannot be changed, 
+while the elements of a list can be changed.
+-----------------------------------
+
+14. How do you type a tuple value that only contains the integer 42?
+
+Ans: (42,)
+-----------------------------------
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+
+Ans: To get a list value's tuple form, you can use the tuple() function. To get a tuple value's list form,
+ you can use the list() function.
+-----------------------------------
+
+16. Variables that 'contain' list values are not necessarily lists themselves. Instead, what do they contain?
+
+Ans: Variables that contain list values contain references to the list values.
+-----------------------------------
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+
+Ans: The copy.copy() function creates a shallow copy of a list. The copy.deepcopy() function creates a deep copy of a list. 
+A shallow copy copies the references to the elements of the list, while a deep copy copies the elements of the list themselves.
+
+------------------------------
