@@ -1,0 +1,98 @@
+Q.1. What are keywords in python? Using the keyword library, print all the python keywords.
+
+Ans: Keywords are reserved words in Python that have special meaning to the interpreter. 
+They cannot be used as variable names or function names.
+    ```
+    import keyword
+
+    print(keyword.kwlist)
+    ```
+---------------------------------
+
+Q.2. What are the rules to create variables in python?
+
+Ans: The rules to create variables in Python are:
+
+    a]Variables must start with a letter or an underscore.
+    b] Variables cannot start with a number.
+    c] Variables can contain letters, numbers, and underscores.
+    d] Variables cannot contain spaces.
+    e] Variable names are case-sensitive.
+-------------------------------------------
+Q.3. What are the standards and conventions followed for the nomenclature of variables in
+python to improve code readability and maintainability?
+
+Ans: The following standards and conventions are followed for the nomenclature of variables in Python to improve code readability and maintainability:
+
+    a] Variables should be descriptive of their purpose.
+    b] Variables should be short and concise.
+    c] Variables should be consistent in their naming style.
+    d] Variables should be unique within their scope.
+---------------------------------------------------------
+
+Q.4. What will happen if a keyword is used as a variable name?
+
+Ans: If a keyword is used as a variable name, an SyntaxError error will be raised.
+-----------------------------------------------------
+Q.5. For what purpose def keyword is used?
+
+Ans: The def keyword is used to define functions in Python.
+-------------------------------------------------------
+
+Q.6. What is the operation of this special character ‘\’?
+
+Ans: The special character \ is used to escape special characters in Python. 
+    For example, the \n character represents a newline character.
+
+----------------------------------------------------
+
+Q.7. Give an example of the following conditions:
+Ans:
+    (i) Homogeneous list
+
+        list_of_numbers = [1, 2, 3, 4, 5]
+
+    (ii) Heterogeneous set
+
+        set_of_objects = {1, 'hello', True, 3.14}
+
+    (iii) Homogeneous tuple
+
+        tuple_of_strings = ('hello', 'world', 'python')
+-------------------------------------------------------
+
+Q.8. Explain the mutable and immutable data types with proper explanation & examples.
+
+Ans: Mutable data types are those that can be changed after they are created. 
+Immutable data types cannot be changed after they are created.
+
+Some examples of mutable data types are lists, dictionaries, and sets. 
+and immutable data types are strings, numbers, and tuples.
+-----------------------------------------------------------------
+
+Q.9. Write a code to create the given structure using only for loop.
+    *
+   ***
+  *****
+ *******
+*********
+Ans:
+    for i in range(5):
+        print(' ' * (5 - i-1) + '* ' * (i+1))
+----------------------------------------------------------
+
+Q.10. Write a code to create the given structure using while loop.
+|||||||||
+ |||||||
+  |||||
+   |||
+    |
+Ans:
+    for i in range(rows, 1, -1):
+        for space in range(0, rows-i):
+            print("  ", end="")
+        for j in range(i, 2*i-1):
+            print("* ", end="")
+        for j in range(1, i-1):
+            print("* ", end="")
+        print()
