@@ -1,0 +1,113 @@
+1. In Python, what is the difference between a built-in function and a user-defined function? Provide an
+example of each.
+
+Ans: Built-in functions are functions that are pre-defined in the Python language. 
+User-defined functions are functions that are defined by the user.
+
+An example of a built-in function is the print() function. The print() function prints the value of 
+its arguments to the console.
+
+An example of a user-defined function is the following function:
+  ```
+  def add(n,m):
+    
+      return n+m
+  ```
+--------------------------------------------------
+
+2. How can you pass arguments to a function in Python? Explain the difference between positional
+arguments and keyword arguments.
+
+Ans: There are two ways to pass arguments to a function in Python: positional arguments and keyword arguments.
+
+Positional arguments are arguments that are passed to a function in the order that they are defined. Keyword arguments are arguments that are passed to a function by name.
+
+For example, the following function takes two positional arguments:
+  ```
+  def add_numbers(x, y):
+    """
+    Adds two numbers together.
+
+    Args:
+      x: The first number to add.
+      y: The second number to add.
+
+    Returns:
+      The sum of the two numbers.
+    """
+
+    return x + y
+    ```
+We can call this function as follows:
+
+  add_numbers(10, 20)
+In this case, the arguments 10 and 20 are positional arguments.
+
+Keyword arguments are passed to a function by name. 
+For example, the following function takes two keyword arguments:
+
+  ```
+  def add_numbers(x, y):
+    """
+    Adds two numbers together.
+
+    Args:
+      x: The first number to add.
+      y: The second number to add.
+
+    Returns:
+      The sum of the two numbers.
+    """
+
+    return x + y
+    ```
+We can call this function as follows:
+
+  add_numbers(x=10, y=20)
+In this case, the arguments x and y are keyword arguments.
+---------------------------------------------
+
+3. What is the purpose of the return statement in a function? Can a function have multiple return
+statements? Explain with an example.
+
+Ans: The return statement in a function is used to exit the function and return a value. A function can have multiple return statements, but only the first return statement will be executed.
+
+For example, the following function has two return statements:
+```
+  def factorial(n):
+    """
+    Calculates the factorial of a number.
+
+    Args:
+      n: The number to calculate the factorial of.
+
+    Returns:
+      The factorial of the number.
+    """
+
+    if n == 0:
+      return 1
+    else:
+      return n * factorial(n - 1)
+  return 'This is the second return statement.'
+    ```
+The first return statement will return the value 1 if n is equal to 0. 
+The second return statement will return the string 'This is the second return statement.' 
+if n is not equal to 0.
+------------------------------------------------------
+
+4. What are lambda functions in Python? How are they different from regular functions? Provide an
+example where a lambda function can be useful.
+
+Ans: Lambda functions are anonymous functions that can be created using the lambda keyword. Lambda functions are different from regular functions in a few ways:
+
+    a] Lambda functions are defined inline.
+    b] Lambda functions can only have one expression.
+    c] Lambda functions cannot have a return statement.
+    d] Lambda functions can be useful in situations where you need a short, one-off function. 
+    
+    For example, the following lambda function can be used to calculate the factorial of a number:
+
+        ```
+        factorial = lambda n: n * factorial(n - 1) if n2
+        ```
