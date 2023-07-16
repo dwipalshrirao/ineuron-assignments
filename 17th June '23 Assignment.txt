@@ -1,0 +1,141 @@
+1. What is the role of try and exception block?
+
+Ans:
+    The try and except block is used to handle exceptions in Python. 
+    The try block contains the code that might potentially raise an exception. 
+    The except block contains the code that will be executed if an exception is raised in 
+    the try block.
+-------------------------------------------------------------------------------------
+
+2. What is the syntax for a basic try-except block?
+
+Ans:
+    The syntax for a basic try-except block is as follows:
+
+    try:
+        # code that might raise an exception
+    except Exception as e:
+        # code to handle the exception
+-----------------------------------------------------------------------------------------
+
+3. What happens if an exception occurs inside a try block and there is no matching except block?
+
+Ans:
+    If an exception occurs inside a try block and there is no matching except block, 
+    the program will crash.
+-----------------------------------------------------------------------------------------
+
+4. What is the difference between using a bare except block and specifying a specific exception type?
+
+Ans:
+    A bare except block will catch any exception that is raised. This can be useful if you don't 
+    know what type of exception might be raised. However, it can also be difficult to debug your 
+    code if you don't know what type of exception was raised.
+
+    Specifying a specific exception type in the except block will only catch that specific type of 
+    exception. This can be useful if you know what type of exception might be raised. 
+    It can also make your code easier to debug, because you will know what type of exception was raised.
+----------------------------------------------------------------------------------------------
+
+5. Can you have nested try-except blocks in Python? If yes, then give an example.
+
+Ans:
+    Yes, you can have nested try-except blocks in Python. This means that you can have a try block 
+    inside another try block. 
+    For example:
+
+
+        try:
+            try:
+                # code that might raise an exception
+            except Exception as e:
+                # handle the exception
+            else:
+                # code that will only be executed if no exception is raised
+        except Exception as e:
+            # handle the exception
+-----------------------------------------------------------------------------------------
+
+6. Can we use multiple exception blocks, if yes then give an example.
+
+Ans:
+    Yes, you can use multiple exception blocks in Python. This means that you can have multiple 
+    except blocks after a try block. 
+    For example:
+
+        try:
+            # code that might raise an exception
+        except ValueError:
+            # handle a ValueError exception
+        except IndexError:
+            # handle an IndexError exception
+        except Exception as e:
+            # handle any other exception
+------------------------------------------------------------------------------------------
+
+7. Write the reason due to which following errors are raised:
+
+Ans:
+    EOFError:- This error is raised when the end of a file is reached unexpectedly.
+    FloatingPointError:- This error is raised when a floating point operation results in an invalid value.
+    IndexError:- This error is raised when an index is out of range.
+    MemoryError:- This error is raised when the Python interpreter runs out of memory.
+    OverflowError:- This error is raised when a numeric value is too large to be represented.
+    TabError:- This error is raised when a tab character is found in a string that is being parsed.
+    ValueError:- This error is raised when a value is not of the correct type.
+------------------------------------------------------------------------------------------
+
+8. Write code for the following given scenario and add try-exception block to it:
+
+Ans:
+    a. Program to divide two numbers
+
+        def divide_numbers(x, y):
+            try:
+                return x / y
+            except ZeroDivisionError:
+                print("Cannot divide by zero")
+
+        print(divide_numbers(10, 2))
+        print(divide_numbers(10, 0))
+
+
+    b. Program to convert a string to an integer
+
+        def string_to_integer(string):
+            try:
+                return int(string)
+            except ValueError:
+                print("The string cannot be converted to an integer")
+
+        print(string_to_integer("10"))
+        print(string_to_integer("abc"))
+
+
+    c. Program to access an element in a list
+
+        def access_element_in_list(list, index):
+            try:
+                return list[index]
+            except IndexError:
+                print("The index is out of range")
+
+        list = [1, 2, 3]
+        print(access_element_in_list(list, 0))
+        print(access_element_in_list(list, 3))
+
+    
+    d. Program to handle a specific exception:
+
+            try:
+                # code that might raise an exception
+            except CustomError:
+                print("a specific exception")
+
+    
+    e. Program to handle any exception:
+
+            try:
+                # code that might raise an exception
+            except Exception as e:
+                print(e)
