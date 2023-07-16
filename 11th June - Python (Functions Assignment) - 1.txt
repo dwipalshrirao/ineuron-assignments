@@ -1,0 +1,116 @@
+1. What is a lambda function in Python, and how does it differ from a regular function?
+
+Ans: 
+        A lambda function is a small anonymous function. It is defined using the lambda keyword, and 
+    it can only have one expression. Lambda functions are often used in conjunction with other functions,
+    such as map() and filter().
+-----------------------------------------------------------------------------------------------
+
+2. Can a lambda function in Python have multiple arguments? If yes, how can you define and use them?
+
+Ans: 
+        Yes, a lambda function can have multiple arguments. However, it can only have one expression.
+    The arguments are defined in the same way as they are for regular functions. 
+    For example:
+
+        square = lambda x, y: x * x + y * y
+
+    This lambda function takes two arguments, x and y, and returns the sum of their squares.
+------------------------------------------------------------------------------------------------
+
+3. How are lambda functions typically used in Python? Provide an example use case.
+
+Ans: 
+    Lambda functions are typically used in conjunction with other functions, 
+    such as map() and filter(). For example, the following code uses a lambda function to double 
+    all the elements in a list:
+
+    numbers = [1, 2, 3, 4, 5]
+    doubled_numbers = map(lambda x: x * 2, numbers)
+
+    The map() function takes a function and an iterable as arguments. 
+    The function is called with each element in the iterable, and the results are returned as a new i
+    terable. In this case, the lambda function is called with each element in the numbers list, 
+    and the results are a new list of doubled numbers.
+------------------------------------------------------------------------------------------------
+
+4. What are the advantages and limitations of lambda functions compared to regular functions in Python?
+Ans:
+    * Advantages:
+
+        Lambda functions are more concise than regular functions.
+        Lambda functions are easier to read and understand.
+        Lambda functions can be used as arguments to other functions.
+
+    * Limitations:-
+        Lambda functions can only have one expression.
+        Lambda functions are not as versatile as regular functions.
+--------------------------------------------------------------------------------------------------
+
+5. Are lambda functions in Python able to access variables defined outside of their own scope? Explain with an example.
+
+Ans:
+    Yes, lambda functions in Python can access variables defined outside of their own scope. 
+    However, they can only access variables that are defined in the enclosing scope. 
+    For example:
+
+        x = 10
+        square = lambda: x * x
+        print(square())
+    The square lambda function is able to access the variable x because it is defined in the enclosing scope. The output of the code is 100.
+---------------------------------------------------------------------------------------
+
+6. Write a lambda function to calculate the square of a given number.
+
+Ans:
+    square = lambda x: x * x
+
+    This lambda function takes a number as an argument and returns its square.
+-------------------------------------------------------------------------------------------
+
+7. Create a lambda function to find the maximum value in a list of integers.
+
+Ans:
+
+    max_value = lambda numbers: max(numbers)
+
+    This lambda function takes a list of integers as an argument and returns the maximum value in 
+    the list.
+------------------------------------------------------------------------------------------------
+8. Implement a lambda function to filter out all the even numbers from a list of integers.
+
+Ans:
+    even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+
+    This lambda function takes a list of integers as an argument and returns a new list containing 
+    all the even numbers in the original list.
+-----------------------------------------------------------------------------------------------
+
+9. Write a lambda function to sort a list of strings in ascending order based on the length of each string.
+
+Ans:
+    sorted_strings = sorted(strings, key=lambda x: len(x))
+
+    This lambda function takes a list of strings as an argument and returns a new list containing 
+    the strings sorted in ascending order by their length.
+------------------------------------------------------------------------------------------------
+
+10. Create a lambda function that takes two lists as input and returns a new list containing the common elements between the two lists.
+
+Ans:
+    common_elements = list(filter(lambda x: x in list1, list2))
+
+    This lambda function takes two lists as arguments and returns a new list containing 
+    the elements that are common to both lists.
+-------------------------------------------------------------------------------------------------
+
+11. Write a recursive function to calculate the factorial of a given positive integer.
+
+ANs:
+    def factorial(n):
+        if n < 0:
+            return
+        elif n == 0:
+            return 1
+        else:  
+            return n*factorial(n-1)
